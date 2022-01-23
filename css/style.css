@@ -10,6 +10,9 @@ body{
     padding: 0px;
     font-family: poppins;
 }
+/*------------------------------ 
+     Small Device Responsive
+------------------------------*/
 @media only screen and (max-width:668px){
     .r-for-small{
         font-size: 20px;
@@ -18,3 +21,16 @@ body{
         display: none;
     }
 }
+/*---------------------------------- 
+    Bonus section Button Style 
+------------------------------------*/
+.bg-color{
+    background-color: #3F87F5;
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+.margin-toop{
+    margin-top: 10px;
+}
+

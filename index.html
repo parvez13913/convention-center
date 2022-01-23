@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Nika-Event-Agency</title>
+    <!------------------------ 
+        Fontawesome Script 
+     ------------------------->
+     <script src="https://kit.fontawesome.com/4e56454f3f.js" crossorigin="anonymous"></script>
     <!------------------------------- 
         Bootstrap Min CSS Link  
     --------------------------------->
@@ -67,7 +71,7 @@
                     <h1 class="fw-bolder h1 r-for-small">you celebrate</h1>
                     <p class="pra-for-sm">It’s simple. You have an event to plan and
                       we have the solutions</p>
-                      <button class="btn bg-white text-primary fw-bold px-5 py-2">Book Now</button>
+                      <button class="btn bg-white text-primary fw-bold px-5 py-2"><a class="text-decoration-none" href="https://parvez13913.github.io/panda-commerce-project/" target="_blank">Book Now</a></button>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
@@ -77,7 +81,7 @@
                     <h1 class="fw-bolder h1 r-for-small">you celebrate</h1>
                     <p class="pra-for-sm">It’s simple. You have an event to plan and
                       we have the solutions</p>
-                      <button class="btn bg-white text-primary fw-bold px-5 py-2">Book Now</button>
+                      <button class="btn bg-white text-primary fw-bold px-5 py-2"><a class="text-decoration-none" href="https://parvez13913.github.io/panda-commerce-project/" target="_blank">Book Now</a></button>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
@@ -87,7 +91,7 @@
                     <h1 class="fw-bolder h1 r-for-small">you celebrate</h1>
                     <p class="pra-for-sm">It’s simple. You have an event to plan and
                       we have the solutions</p>
-                      <button class="btn bg-white text-primary fw-bold px-5 py-2">Book Now</button>
+                      <button class="btn bg-white text-primary fw-bold px-5 py-2"><a class="text-decoration-none" href="https://parvez13913.github.io/panda-commerce-project/" target="_blank">Book Now</a></button>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
@@ -97,7 +101,7 @@
                     <h1 class="fw-bolder h1 r-for-small">you celebrate</h1>
                     <p class="pra-for-sm">It’s simple. You have an event to plan and
                       we have the solutions</p>
-                      <button class="btn bg-white text-primary fw-bold px-5 py-2">Book Now</button>
+                      <button class="btn bg-white text-primary fw-bold px-5 py-2"><a class="text-decoration-none" href="https://parvez13913.github.io/panda-commerce-project/" target="_blank">Book Now</a></button>
                   </div>
                 </div>
               </div>
@@ -115,9 +119,55 @@
     <!--------------------- 
           Header End 
     ----------------------->
+    <main class="my-5">
+      <!--------------------- 
+          Bonus Scetion-1 
+      ------------------------>
+      <section>
+        <div class="container d-flex align-items-center justify-content-center">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12 margin-bottom">
+              <img class="w-100" src="images/wedding.png" alt="wedding-images">
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 margin-toop">
+              <h1>Hello! We Are an Event Planning Agency</h1>
+              <p>As the premier event planning company in the area, we know that it’s not “one size fits all”. Each event and client is unique and we believe our services should be as well. We know that it should be “Can I hire a planner?” not “Can I afford one?”.</p>
+              <button type="button" class="btn btn-primary fw-bold px-5 py-2" id="liveToastBtn">
+                <span>Explore our album</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div>         
+          <div class="position-fixed bottom-50 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                 <i class="fas fa-gift"></i>
+                 <span>20% off on next booking</span>
+                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+            </div>
+         </div>
+        </div> 
+          </div>
+          <!-------------------- 
+                Toast Start
+          ---------------------->
+      </section>
+    </main>
 
+     
+     <script>
+       var toastTrigger = document.getElementById('liveToastBtn')
+       var toastLiveExample = document.getElementById('liveToast')
+       if (toastTrigger) {
+       toastTrigger.addEventListener('click', function () {
+       var toast = new bootstrap.Toast(toastLiveExample)
 
-
+      toast.show()
+  })
+}
+     </script>
     <!---------------------------------- 
           Bootstrap BUndel Min Js 
     ----------------------------------->
