@@ -33,4 +33,13 @@ body{
 .margin-toop{
     margin-top: 10px;
 }
+/*------------------------ 
+    Our Section Style 
+-------------------------*/
+.button-backg{
+    background-color:#f3f0f2;
+}
+.package-3{
+    border-radius: 10px;
+}
 
